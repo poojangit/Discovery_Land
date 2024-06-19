@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'Messina Sans';
+    src: local('Messina Sans Regular'), local('Messina-Sans-Regular'),
+        url('../assets/font/MessinaSans-Regular.woff2') format('woff2'),
+        url('../assets/font/MessinaSans-Regular.woff') format('woff'),
+        url('../assets/font/MessinaSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    font-family: messina-sans;
+    /* margin: 0; */
+}
+
+.discovery-head {
+    padding: 60px 200px 10px 200px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: -70px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.discovery-head-logo {
+    cursor: pointer;
+    display: block;
+    pointer-events: all;
+    position: relative;
+    /* z-index: 2; */
+}
+
+.discovery-head-logo img {
+    width: 175px;
+}
+
+.discovery-head-nav {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    pointer-events: all;
+    position: relative;
+    z-index: 2;
+    /* display: none; */
+}
+
+.discovery-head-nav ul {
+    gap: 80px;
+    display: flex;
+}
+
+.discovery-head-nav ul li {
+    overflow: hidden;
+    position: relative;
+}
+
+.discovery-head-nav ul li a {
+    color: white;
+    text-decoration: none;
+    /* font-size: .9rem; */
+    font-size: 20px;
+}
+
+.gallery-main {
+    background-color: #111;
+}
+
+
+.gallery-main-article-div {
+    align-items: center;
+    display: flex;
+    height: 65vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-main-article-div img {
+    height: 100%;
+    left: 0;
+    /* -o-object-fit: cover; */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.inner-gallery-div {
+    position: relative;
+    z-index: 3;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
+    width: 100%;
+}
+
+.inner-gallery-white {
+    color: white;
+    font-family: gt-sectra;
+    font-weight: 200;
+    font-size: 75px;
+}
+
+.galleries-items {
+    display: block;
+    width: 33.33%;
+}
+
+.galleries-items a {
+    text-decoration: none;
+}
+
+.galleries-items-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galleries-items-figure {
+    overflow: hidden;
+    /* padding-top: 65%; */
+    position: relative;
+}
+
+.galleries-items-figure img {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    /* position: absolute; */
+    top: 0;
+    width: 100%;
+}
+
+.galleries-items-tile {
+    font-family: gt-sectra;
+    color: #fff;
+    margin-bottom: 0;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* & footer  */
+
+.discovery-footer {
+    background-color: #161f1e;
+    position: relative;
+    padding: 0 166.50px 0 166.500px;
+}
+.discovery-footer-div {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
+    width: 100%;
+}
+.discovery-footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 137px;
+    padding-bottom: 137px;
+    
+}
+.discovery-footer-content img {
+    width: 50px;
+}
+.discovery-nav-content {
+    display: flex;
+}
+.discovery-nav-menu h4 {
+    color: hsla(0, 0%, 100%, .75);
+    font-family: messina-sans;
+    font-size: .7rem;
+    letter-spacing: -.01em;
+    margin-bottom: .75rem;
+    text-transform: uppercase;
+    width: 100%;
+}
+.discovery-nav-menu ul {
+    margin-bottom: 10px;
+}
+.discovery-nav-menu ul li {
+    font-size: .9rem;
+    line-height: 2;
+}
+.discovery-first-list{
+    list-style: none;
+   
+}
+.discovery-first-list li a {
+    color: #fff;
+}
+.discovery-second-list a {
+    color: #fff;
+}
+.discovery-about {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 166px;
+}
+.discovery-about-main{
+    list-style: none;
+}
+.discovery-about-main li a {
+    color: #fff;
+    /* text-decoration: none; */
+}
+.about-main-list {
+    font-size: .9rem;
+    line-height: 2;
+    margin-bottom: .25rem;
+}
+.discovery-about-sub{
+    list-style: none;
+    margin-left: 84px;
+    margin-right: 11px;
+}
+.discovery-about-sub li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* & footer bottom */
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 65px;
+}
+.footer-bottom-copyright{
+    font-size: .75rem;
+    color: hsla(0, 0%, 100%, .75);
+}
+.site-by-outpost a{
+    text-decoration: none;
+    color: #fff;
+    font-size: .75rem;
+}
