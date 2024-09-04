@@ -19,57 +19,68 @@ body {
     font-family: messina-sans;
     /* margin: 0; */
 }
+
 /* & Header part css begins here */
 .discovery-head {
-    /* padding: 60px 200px 10px 200px; */
-    /* align-items: center; */
-
+    padding: 60px 200px 10px 200px;
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
-    left: 0;
+    /* flex-direction: column; */
+    /* left: 0; */
     pointer-events: none;
     position: absolute;
-    /* top: -70px; */
+    top: -70px;
     width: 100%;
-    z-index: 1000;
+    /* z-index: 1000; */
+
+
+    @media only screen and (min-width: 300px) and (max-width: 600px) {
+        /* flex-direction: column; */
+        padding: 88px 23px 10px 21px;
+        /* justify-content: center; */
+
+    }
 }
+
 .discovery-head-logo {
     cursor: pointer;
-    display: block;
+    /* display: block; */
     pointer-events: all;
     position: relative;
     z-index: 2;
-    width: 175px;
-    height: 75px;
 }
 
 .discovery-head-logo img {
-    /* width: 175px; */
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 175px;
+
+    @media only screen and (min-width: 300px) and (max-width: 600px) {
+        height: 125px;
+
+    }
 }
 
 .discovery-head-nav {
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
-    justify-content: space-between;
-    pointer-events: all;
     position: relative;
     z-index: 2;
-    width: 100%;
-    /* display: none; */
+
 }
 
 .discovery-head-nav ul {
-    /* gap: 80px; */
+    gap: 80px;
     display: flex;
+    list-style: none;
+    /* dont use */
+
+    @media only screen and (min-width: 300px) and (max-width: 600px) {
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .discovery-head-nav ul li {
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
 }
 
@@ -77,8 +88,13 @@ body {
     color: white;
     text-decoration: none;
     /* font-size: .9rem; */
-    font-size: 13px;
+    font-size: 20px;
+
+    @media only screen and (min-width: 300px) and (max-width: 600px) {
+        font-size: 15px;
+    }
 }
+
 /* & Header part css ended */
 
 .gallery-main {
@@ -87,10 +103,12 @@ body {
 
 /* ! Middle gallery section's css begins*/
 .gallery-main-article-div {
-    align-items: center;
+    /* align-items: center;
     display: flex;
     height: 65vh;
     overflow: hidden;
+    position: relative; */
+    padding: 15rem 1rem 6rem;
     position: relative;
 }
 
@@ -121,8 +139,12 @@ body {
 }
 
 .galleries-items {
-    display: block;
+    /* display: block; */
     width: 33.33%;
+
+    @media only screen and (min-width: 300px) and (max-width: 600px) {
+        width: 102.33%;
+    }
 }
 
 .galleries-items a {
@@ -132,6 +154,7 @@ body {
 .galleries-items-div {
     display: flex;
     flex-wrap: wrap;
+    /* gap: 16px; */
 }
 
 .galleries-items-figure {
@@ -141,11 +164,7 @@ body {
 }
 
 .galleries-items-figure img {
-    height: 100%;
-    left: 0;
-    object-fit: cover;
-    /* position: absolute; */
-    top: 0;
+
     width: 100%;
 }
 
@@ -157,42 +176,66 @@ body {
     text-align: center;
     white-space: nowrap;
 }
+
 /* ! Middle gallery section's css ends*/
 /* * Footer css begins*/
 
 .discovery-footer {
     background-color: #161f1e;
     position: relative;
-    /* padding: 0 166.50px 0 166.500px; */
+    padding: 0 166.50px 0 166.500px;
+
+    @media only screen and (min-width: 300px) and (max-width: 600px) {
+        padding: 0px 36.5px 0 38.5px;
+    }
 }
+
 .discovery-footer-div {
     margin-left: auto;
     margin-right: auto;
-    max-width: 80rem;
-    width: 100%;
+    max-width: 90rem;
+    /* width: 100%; */
 }
+
 .discovery-footer-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 137px;
-    padding-bottom: 137px;
-    width: 100%;
-    
+    padding-top: 130px;
+    padding-bottom: 130px;
+    /* width: 100%; */
+
+    @media only screen and (min-width: 300px) and (max-width: 600px) {
+        display: flex;
+        /* flex-wrap: wrap; */
+        /* justify-content: space-between; */
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
 }
-/* .discovery-footer-logo{
-    width: 50%;
-} */
+
+.discovery-footer-logo {
+    @media only screen and (min-width: 300px) and (max-width: 600px) {
+        width: 100%;
+        height: 84px;
+    }
+}
+
 .discovery-footer-content img {
     width: 50px;
 }
+
 .discovery-nav-content {
     display: flex;
-    gap: 127px;
-    /* justify-content: space-between; */
-    /* width: 35%; */
-    flex-direction: column;
+    gap: 120px;
+
+    @media only screen and (min-width: 300px) and (max-width: 600px) {
+        flex-direction: column;
+        gap: 50px;
+    }
 }
+
 .discovery-nav-menu h4 {
     color: hsla(0, 0%, 100%, .75);
     font-family: messina-sans;
@@ -200,48 +243,62 @@ body {
     letter-spacing: -.01em;
     margin-bottom: .75rem;
     text-transform: uppercase;
-    width: 100%;
+    /* width: 100%; */
 }
+
 .discovery-nav-menu ul {
+    list-style: none;
     margin-bottom: 10px;
 }
+
 .discovery-nav-menu ul li {
     font-size: .9rem;
     line-height: 2;
 }
-.discovery-first-list{
+
+.discovery-first-list {
     list-style: none;
-   
+    /* margin-bottom: 10px; */
+
 }
+
 .discovery-first-list li a {
     color: #fff;
 }
+
 .discovery-second-list a {
     color: #fff;
 }
+
 .discovery-about {
     display: flex;
-    flex-wrap: wrap;
-    /* margin-left: 166px; */
-    /* width: 50%; */
+
+    @media only screen and (min-width: 300px) and (max-width: 600px) {
+        margin-left: 0;
+    }
 }
-.discovery-about-main{
+
+.discovery-about-main {
     list-style: none;
 }
+
 .discovery-about-main li a {
     color: #fff;
     /* text-decoration: none; */
 }
+
 .about-main-list {
     font-size: .9rem;
     line-height: 2;
     margin-bottom: .25rem;
 }
-.discovery-about-sub{
+
+.discovery-about-sub {
     list-style: none;
     margin-left: 84px;
     margin-right: 11px;
 }
+
 .discovery-about-sub li a {
     color: #fff;
     text-decoration: none;
@@ -253,19 +310,22 @@ body {
     display: flex;
     justify-content: space-between;
     padding-bottom: 65px;
+
+    @media only screen and (min-width: 300px) and (max-width: 600px) {
+        flex-direction: column;
+    }
 }
-.footer-bottom-copyright{
+
+.footer-bottom-copyright {
     font-size: .75rem;
     color: hsla(0, 0%, 100%, .75);
 }
-.site-by-outpost a{
+
+.site-by-outpost a {
     text-decoration: none;
     color: #fff;
     font-size: .75rem;
 }
+
 /* & footer bottom css ends*/
 /* * Footer css ends*/
-
-@media only screen and (min-width:320px) and (max-width:600px){
-
-}

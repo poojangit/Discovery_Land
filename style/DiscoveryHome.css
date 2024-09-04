@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.discovery-head {
+    padding: 60px 200px 10px 200px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    /* left: 0; */
+    pointer-events: none;
+    position: absolute;
+    top: -70px;
+    width: 100%;
+    z-index: 1000;
+
+
+    @media only screen and (min-width: 300px) and (max-width: 600px) {
+        /* flex-direction: column; */
+        padding: 88px 23px 10px 21px;
+        /* justify-content: center; */
+
+    }
+}
+
+.discovery-head-logo {
+    cursor: pointer;
+    /* display: block; */
+    pointer-events: all;
+    position: relative;
+    /* z-index: 2; */
+}
+
+.discovery-head-logo img {
+    width: 175px;
+
+    @media only screen and (min-width: 300px) and (max-width: 600px) {
+        height: 125px;
+
+    }
+}
+
+.discovery-head-nav {
+    /* align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    pointer-events: all; */
+    position: relative;
+    /* z-index: 2;
+    display: none; */
+
+    /* position: relative;
+    display: flex;
+    top: 0; */
+}
+
+.discovery-head-nav ul {
+    gap: 80px;
+    display: flex;
+    list-style: none;
+    /* dont use */
+
+    @media only screen and (min-width: 300px) and (max-width: 600px) {
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.discovery-head-nav ul li {
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.discovery-head-nav ul li a {
+    color: white;
+    text-decoration: none;
+    /* font-size: .9rem; */
+    font-size: 20px;
+
+    @media only screen and (min-width: 300px) and (max-width: 600px) {
+        font-size: 15px;
+    }
+}
+
+/* & Header part css ended */
+/* !------------ */
+.main-container{
+   background-color: black;
+}
+
+.top-inner-container{
+    /* border: 2px solid palevioletred; */
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* padding-left: 407px; */
+    /* padding-right: 166px; */
+}
+.vedio-container{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    @media only screen and (min-width: 300px) and (max-width: 600px) {
+        width: 100%;
+    }
+}
+.page-vedio{
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    @media only screen and (min-width: 300px) and (max-width: 600px) {
+        width: 100%;
+    }
+
+    video {
+        /* width: 100%; */
+        width: fit-content;
+
+    @media only screen and (min-width: 300px) and (max-width: 600px) {
+        width: 100%;
+    }
+    }
+}
+.main-heading {
+    backface-visibility: hidden;
+    width: fit-content;
+    color: #ffffff;
+    line-height: 1.0;
+    position: relative;
+    will-change: transform;
+    z-index: 4;
+    /* padding-top: 630px; */
+    top:400px;
+    font-size: 100px;
+    left: 432px;
+    p{
+        font-family: gt-sectra;
+        font-weight: 200;
+    }
+    p {
+        font-family: gotham;
+        font-weight: 100;
+    }
+}
+
+.main-bottom-content{
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    z-index: 4;
+    position: absolute;
+    top: 650px;
+    left: 194px;
+    gap: 1000px;
+}
+.bottom-labels{
+    align-items: center;
+    color: #fff;
+    display: flex;
+    margin-bottom: 1.25rem;
+    position: relative;
+}
+.bottom-labels-inner{
+    position: relative;
+    div{
+        font-size: 1.175rem;
+    }
+}
+.page-scroll {
+    color: hsla(0, 0%, 100%, .65);
+    display: block;
+    font-size: .9rem;
+}
+
